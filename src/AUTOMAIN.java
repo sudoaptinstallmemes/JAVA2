@@ -1,4 +1,7 @@
+import java.util.Scanner;
+
 public class AUTOMAIN {
+
     String carModel;
     int mileage;
     public void Car()
@@ -34,4 +37,5 @@ public class AUTOMAIN {
             mileage = newMileage;
         }
     }
-}
+
+    }
