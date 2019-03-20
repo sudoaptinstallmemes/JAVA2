@@ -2,8 +2,9 @@ import java.util.Scanner;
 
 public class AUTOMAIN {
 
-    String carModel;
-    int mileage;
+    private String carModel;
+    private int mileage;
+
     public void Car()
     {
         carModel = "";
