@@ -5,10 +5,6 @@ public class AUTOMAIN {
     private String carModel;
     private int mileage;
 
-    public void Car()
-    {
-        carModel = "";
-    }
     public void Car(String startCarModel, int startMileage)
     {
         setCarModel(startCarModel);
