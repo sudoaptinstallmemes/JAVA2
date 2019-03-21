@@ -1,5 +1,5 @@
 public class Invest_Main {
-
+//72 pg 417
     private double investment;
     private double rate;
     private double years;
