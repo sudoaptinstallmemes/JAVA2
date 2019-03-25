@@ -26,7 +26,7 @@ public class BankMain {
         setType(tempType);
         setBalance(tempBalance);
     }
-    public void gen()
+    public void gen()//interacts with the user to create accounts
     {
 
         //Account Number
