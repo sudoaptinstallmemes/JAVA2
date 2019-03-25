@@ -80,9 +80,56 @@ public class BankMain {
     {
         System.out.println("Deposit or Withdrawl?");
         String action = input.nextLine();
-
+        System.out.println("How much?");
+        int wish = input.nextInt();
         action = action.toLowerCase();
 
+//        if(wish<20)
+//        {
+//            System.out.println("A five dollar charge will be incurred in the case of Withdrawls smaller than 20 dollars.");
+//            System.out.println("Are you sure? (y/n)");
+//            String response = input.nextLine();
+//            response = response.toLowerCase();
+//            switch(response)
+//            {
+//                case("yes"):
+//                case("y"):
+//                case("1"):
+//                    break;
+//                case("no"):
+//                case("n"):
+//                case("2"):
+//                    return;
+//
+//            }
+//
+//        }
+
+
+        if((Balance - wish)<200)
+        {
+            System.out.print("Warning, balances below 200 dollars will be charged a tax of 10 dollars.");
+        }
+        switch(action)
+        {
+            case("deposit"):
+            case("1"):
+            case("d"):
+                Balance = Balance + wish;
+                break;
+            case("withdrawl"):
+            case("2"):
+            case("w"):
+                Balance = Balance - wish;
+                if(Balance < 200)
+                {
+                    Balance = Balance - 10;
+                }
+
+            default:
+                System.out.println("Could not read input. Please try again.");
+                return;
+        }
     }
 
 
