@@ -16,19 +16,23 @@ public class BankClient {
         bank2.gen();
         do {
             System.out.println("Which account would you like to withdraw/deposit from?");
-            System.out.println("1 or 2");
+            System.out.println("1, 2 or type end to stop program.");
 
             String input = scan.nextLine();
-
+            input = input.toLowerCase();
             switch(input)
             {
                 case("1"):
                     bank.deposit();
                 case("2"):
                     bank2.deposit();
+                case("end"):
+                    x = 2;
+                    return;
                 default:
                     System.out.println("Could not process, please try again.");
                     return;
+
             }
         }
         while(x < 1);
