@@ -46,7 +46,6 @@ public class GRAPH {
 
     public void draw( GraphicsContext gc)
     {
-        gc.setFill(Color.BLACK);
         gc.fillRect(sX+100, 700-height, 50, height);
 //        gc.fillRect(sX+100, height, 50, height/2);
 
