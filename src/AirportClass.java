@@ -1,3 +1,4 @@
+
 public class AirportClass{
     String airportCode;
     int gates;

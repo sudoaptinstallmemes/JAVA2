@@ -11,41 +11,43 @@ public class Graph_Client extends Application
     @Override
     public void start ( Stage stage)
     {
+        GRAPH start = new GRAPH();
+        start.prompt();
         GraphicsContext gc  = JIGraphicsUtility.setUpGraphics( stage, "Weather Graph", 1000, 1200);
 
 
-        s1 = new GRAPH(0, 310, 1, 310);
-        s2 = new GRAPH(70, 240, 1, 240);
-        s3 = new GRAPH(140, 450, 1, 450);
+        s1 = new GRAPH(0, 310, 1, 310,start.prompt());
+        s2 = new GRAPH(70, 240, 1, 240,"Feb");
+        s3 = new GRAPH(140, 450, 1, 450,"Mar");
 
-        s4 = new GRAPH(210, 600, 1, 600);
-        s5 = new GRAPH(280, 690, 1, 690);
+        s4 = new GRAPH(210, 600, 1, 600,"Apr");
+        s5 = new GRAPH(280, 690, 1, 690,"May");
 
-        s6 = new GRAPH(350, 800, 1, 800);
-        s7 = new GRAPH(420, 880, 1, 880);
-        s8 = new GRAPH(490, 870, 1, 870);
+        s6 = new GRAPH(350, 800, 1, 800,"Jun");
+        s7 = new GRAPH(420, 880, 1, 880,"Jul");
+        s8 = new GRAPH(490, 870, 1, 870,"Aug");
 
-        s9 = new GRAPH(560, 750, 1, 750);
-        s10 = new GRAPH(630, 650, 1, 650);
+        s9 = new GRAPH(560, 750, 1, 750,"Sep");
+        s10 = new GRAPH(630, 650, 1, 650,"Oct");
 
-        s11 = new GRAPH(700, 4300, 1, 430);
-        s12 = new GRAPH(770, 2300, 1, 230);
+        s11 = new GRAPH(700, 4300, 1, 430,"Nov");
+        s12 = new GRAPH(770, 2300, 1, 230,"Dec");
 
-        gc.setFill(Color.BLUE);
+//        gc.setFill(Color.BLUE);
         s1.draw(gc);
         s2.draw(gc);
         s3.draw(gc);
-        gc.setFill(Color.YELLOW);
+//        gc.setFill(Color.YELLOW);
         s4.draw(gc);
         s5.draw(gc);
-        gc.setFill(Color.RED);
+//        gc.setFill(Color.RED);
         s6.draw(gc);
         s7.draw(gc);
         s8.draw(gc);
-        gc.setFill(Color.YELLOW);
+//        gc.setFill(Color.YELLOW);
         s9.draw(gc);
         s10.draw(gc);
-        gc.setFill(Color.BLUE);
+//        gc.setFill(Color.BLUE);
         s11.draw(gc);
         s12.draw(gc);
 
