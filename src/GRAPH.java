@@ -10,6 +10,7 @@ public class GRAPH {
     private int height;
     String month;
     int temp;
+    ArrayList<Integer> tempList = new ArrayList<Integer>();
     /*
     default constructor
     sX = sY = 0;
@@ -56,14 +57,14 @@ public class GRAPH {
         temp = temp;
         return this;
     }
-    public ArrayList<String> prompt() {
+    public ArrayList<Integer> prompt() {
         int x = 0;
         String month[] = {"January","February","March","April","May","June","July","August","September","October","November","December"};
         Scanner input = new Scanner(System.in);
-        ArrayList<String> tempList = new ArrayList<String>();
+//        ArrayList<String> tempList = new ArrayList<String>();
         do{
             System.out.println("Input temperature for "+month[x]+".");
-            tempList.add(input.nextLine());
+            tempList.add(input.nextInt());
             x=x+1;
         }
         while(x!= 12);

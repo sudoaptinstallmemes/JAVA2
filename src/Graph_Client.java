@@ -16,22 +16,22 @@ public class Graph_Client extends Application
         GraphicsContext gc  = JIGraphicsUtility.setUpGraphics( stage, "Weather Graph", 1000, 1200);
 
 
-        s1 = new GRAPH(0, 310, 1, 310,start.prompt());
-        s2 = new GRAPH(70, 240, 1, 240,"Feb");
-        s3 = new GRAPH(140, 450, 1, 450,"Mar");
+        s1 = new GRAPH(0, 310, 1, start.tempList.get(1)*10, "Jan");
+        s2 = new GRAPH(70, 240, 1, start.tempList.get(2)*10,"Feb");
+        s3 = new GRAPH(140, 450, 1, start.tempList.get(3)*10,"Mar");
 
-        s4 = new GRAPH(210, 600, 1, 600,"Apr");
-        s5 = new GRAPH(280, 690, 1, 690,"May");
+        s4 = new GRAPH(210, 600, 1, start.tempList.get(4)*10,"Apr");
+        s5 = new GRAPH(280, 690, 1, start.tempList.get(5)*10,"May");
 
-        s6 = new GRAPH(350, 800, 1, 800,"Jun");
-        s7 = new GRAPH(420, 880, 1, 880,"Jul");
-        s8 = new GRAPH(490, 870, 1, 870,"Aug");
+        s6 = new GRAPH(350, 800, 1, start.tempList.get(6)*10,"Jun");
+        s7 = new GRAPH(420, 880, 1, start.tempList.get(7)*10,"Jul");
+        s8 = new GRAPH(490, 870, 1, start.tempList.get(8)*10,"Aug");
 
-        s9 = new GRAPH(560, 750, 1, 750,"Sep");
-        s10 = new GRAPH(630, 650, 1, 650,"Oct");
+        s9 = new GRAPH(560, 750, 1, start.tempList.get(9)*10,"Sep");
+        s10 = new GRAPH(630, 650, 1, start.tempList.get(10)*10,"Oct");
 
-        s11 = new GRAPH(700, 4300, 1, 430,"Nov");
-        s12 = new GRAPH(770, 2300, 1, 230,"Dec");
+        s11 = new GRAPH(700, 4300, 1, start.tempList.get(11)*10,"Nov");
+        s12 = new GRAPH(770, 2300, 1, start.tempList.get(12)*10,"Dec");
 
 //        gc.setFill(Color.BLUE);
         s1.draw(gc);
