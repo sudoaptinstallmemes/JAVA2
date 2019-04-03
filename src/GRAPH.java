@@ -7,10 +7,11 @@ public class GRAPH {
     private int sX;
     private int sY;
     private double scale;
-    private int height;
-    String month;
+    private Integer height;
     int temp;
     ArrayList<Integer> tempList = new ArrayList<Integer>();
+    String month[] = {"January","February","March","April","May","June","July","August","September","October","November","December"};
+
     /*
     default constructor
     sX = sY = 0;
@@ -21,12 +22,12 @@ public class GRAPH {
         scale = 1;
     }
 
-    public GRAPH(int sX, int sY, double scale, int height, String month)
+    public GRAPH(int sX, int sY, double scale, Integer height, String month)
     {
         setCoordinates(sX,sY);
         setScale(scale);
         setHeight(height);
-        setMonth(month);
+
 //        setColor(color);
         setTemp(height/10);
     }
@@ -48,18 +49,17 @@ public class GRAPH {
         this.height = height;
         return this;
     }
-    public GRAPH setMonth(String month)
-    {
-        this.month = month;
-        return this;
-    }
+//    public GRAPH setMonth(String month)
+//    {
+//        this.month = month;
+//        return this;
+//    }
     public GRAPH setTemp(int temp) {
         temp = temp;
         return this;
     }
     public ArrayList<Integer> prompt() {
         int x = 0;
-        String month[] = {"January","February","March","April","May","June","July","August","September","October","November","December"};
         Scanner input = new Scanner(System.in);
 //        ArrayList<String> tempList = new ArrayList<String>();
         do{
@@ -74,9 +74,18 @@ public class GRAPH {
 
 
 
-    public void draw( GraphicsContext gc)
+    public void draw( GraphicsContext gc, int x)
     {
+//        if(tempList.get(x)<40)
+//        {
+//            gc.setFill(Color.BLUE);
+//        }
+//        else{
+//            gc.setFill(Color.BLACK);
+//        }
         gc.setFill(Color.BLACK);
+        System.out.println();
+        System.out.println(tempList.get(1));
         gc.fillRect(sX+100, 700-(height/2), 50, height/2);
         gc.fillText(month+". "+height/10, sX+100, 700-(height/2)-100);
 //        gc.fillRect(sX+100, height, 50, height/2);
