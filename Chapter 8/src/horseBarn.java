@@ -2,38 +2,29 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class horseBarn {
+
+
+    public ArrayList<horseBarn> list = new ArrayList<>();
     public String horseName;
     public int space;
-    public ArrayList<Object> horseManifest = new ArrayList<Object>();
     public static void main(String[] args) {
 
         horseBarn barn = new horseBarn();
         barn.prompt();
 
-        System.out.println();
 
 
 
 
     }
-
-    /* The spaces in the barn. Each array element holds a reference to the horse
-
-     * that is currently occupying the space. A null value indicates an empty space.
-
-     */
-
-
-
-//    private Horse[ ] spaces;
-
-
     public void Horse(String horseName, int space) {
         setHorseName(horseName);
         setSpace(space);
 }
 
-public void prompt(){
+
+
+public ArrayList prompt(){
     do {
         Scanner input = new Scanner(System.in);
         horseBarn barn = new horseBarn();
@@ -42,7 +33,7 @@ public void prompt(){
         horseName = input.nextLine();
         if(horseName.equals("STOP"))
         {
-            return;
+            return null;
         }
         System.out.println();
         System.out.println("Enter Horse Space #");
@@ -53,8 +44,9 @@ public void prompt(){
             System.err.println("Unacceptable space value.");
             barn.prompt();
         }
-        horseManifest.add(barn.Horse(barn.getHorseName(),barn.getSpace()));
-
+        list.add(new horseBarn());
+        System.out.println(list.get(0));
+        return list;
     }
     while(1 != 0);
 }
@@ -83,20 +75,3 @@ public void prompt(){
     }
 
 }
-
-    /* Returns the index of the space that contains the horse with the specified
-
-     *  name.
-
-     * Precondition: No two horses in the barn have the same name.
-
-     * @param name the name of the horse to find
-
-     * @return the index of the space containing the horse with the specified
-
-     *      name;
-
-     *      -1 if no horse with the specified name is in the barn.
-
-     */
-
