@@ -14,16 +14,14 @@ public class horseBarn {
     public ArrayList<horseBarn> list = new ArrayList<>();
     public String horseName;
     public int space;
-    public static void main(String[] args) {
 
+
+    public static void main(String[] args) {
         horseBarn barn = new horseBarn();
         barn.prompt();
-
-
-
-
-
     }
+
+
     public void Horse(String horseName, int space) {
         setHorseName(horseName);
         setSpace(space);
