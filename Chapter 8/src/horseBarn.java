@@ -1,6 +1,13 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/*
+Amon Guinan
+April 2019
+Program creates horse objects
+with names and location indexes
+Prints them upon completion.
+ */
 public class horseBarn {
 
 
@@ -24,16 +31,22 @@ public class horseBarn {
 
 
 
-public ArrayList prompt(){
+public void prompt(){
     do {
         Scanner input = new Scanner(System.in);
         horseBarn barn = new horseBarn();
         System.out.println("Enter Horse Name:");
         System.out.println("Enter STOP to stop.");
         horseName = input.nextLine();
-        if(horseName.equals("STOP"))
+        for(int i = 0; i < list.size()-1; i++)
         {
-            return null;
+
+        }
+        if(horseName.toLowerCase().equals("stop"))
+        {
+            System.out.println(list.get(0).getHorseName());
+            System.out.println((list.get(0).getSpace()));
+            return;
         }
         System.out.println();
         System.out.println("Enter Horse Space #");
@@ -44,9 +57,9 @@ public ArrayList prompt(){
             System.err.println("Unacceptable space value.");
             barn.prompt();
         }
+//        list.add(0, Horse(getHorseName(),Horse(getSpace())));
         list.add(new horseBarn());
-        System.out.println(list.get(0));
-        return list;
+        System.out.println((list.get(0)).getHorseName());
     }
     while(1 != 0);
 }
