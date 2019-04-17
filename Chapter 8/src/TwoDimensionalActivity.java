@@ -8,6 +8,7 @@ public class TwoDimensionalActivity {
         start.generate(array);
         start.set(array);
         start.print(array);
+        start.min(array);
         start.number(array);
     }
     public int [][] generate(int array [][]) // Fill the array with numbers between 50 and 80.
@@ -34,6 +35,7 @@ public class TwoDimensionalActivity {
             }
             System.out.println();
         }
+        System.out.println();
     }
 
     public int [][] set(int array [][]) //Set every array element of a given row to a specified value.
@@ -45,27 +47,30 @@ public class TwoDimensionalActivity {
         return array;
     }
 
-    public int min(int array[][])
+    public int min(int array[][])//Find the smallest column in a given row.
     {
         int arrayMin = 81;
-        for(int x = 0; x!=20; x++)if(array[1][x]<arrayMin)arrayMin=array[1][x];
+        int givenRow = 1; //Specified Row.
+        for(int col = 0; col!=20; col++)if(array[givenRow][col]<arrayMin)arrayMin=array[givenRow][col];
+        System.out.println("Smallest Column: "+arrayMin);
         return arrayMin;
     }
 
     public int number(int array[][]) //Count the number of elements of the array having a specified value.
     {
         int amount = 0;
+        int setVal = 61; //Specified Value.
         for(int row = 0; row!=4; row++)
         {
             for(int col = 0; col!=20; col++)
             {
-                if(array[row][col] == 61)
+                if(array[row][col] == setVal)
                 {
                     amount++;
                 }
             }
         }
-        System.out.println(amount);
+        System.out.println("Number of "+setVal+" values: "+amount);
         return amount;
     }
 }
