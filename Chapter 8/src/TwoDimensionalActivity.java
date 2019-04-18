@@ -1,3 +1,9 @@
+/*
+Amon Guinan
+April 2019
+Code generates two dimensional arrays, then reads them in specified ways.
+ */
+
 import java.util.Random;
 public class TwoDimensionalActivity {
 
@@ -5,11 +11,13 @@ public class TwoDimensionalActivity {
     {
         TwoDimensionalActivity start = new TwoDimensionalActivity();
         int array [][] = new int[4][20];
-        start.generate(array);
-        start.set(array);
-        start.print(array);
-        start.min(array);
-        start.number(array);
+
+        start.generate(array);// Fill the array with numbers between 50 and 80.
+        start.set(array);//Set every array element of a given row to a specified value.
+        start.print(array);//Print the Array.
+        start.min(array);//Find the smallest column in a given row.
+        start.number(array);//Count the number of elements of the array having a specified value.
+
     }
     public int [][] generate(int array [][]) // Fill the array with numbers between 50 and 80.
     {
@@ -56,7 +64,7 @@ public class TwoDimensionalActivity {
         return arrayMin;
     }
 
-    public int number(int array[][]) //Count the number of elements of the array having a specified value.
+    public int number(int array[][])//Count the number of elements of the array having a specified value.
     {
         int amount = 0;
         int setVal = 61; //Specified Value.
