@@ -1,9 +1,7 @@
 import java.io.*;
 import java.util.*;
 public class FileReader {
-    //    throws IOException{
-//        System.err.println("Yucky");
-//    }
+
     public static void main(String[] args) throws FileNotFoundException {
         FileReader go = new FileReader();
         go.Correct();
