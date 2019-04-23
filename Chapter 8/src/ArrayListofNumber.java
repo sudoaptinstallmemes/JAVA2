@@ -45,7 +45,6 @@ public class ArrayListofNumber {
             numList.add(num);
         }
         reader.close();
-        System.out.println("END GET LIST");
         return numList;
     }
 
@@ -55,7 +54,6 @@ public class ArrayListofNumber {
         {
             System.out.println((i+1)+": "+numList.get(i));
         }
-        System.out.println("END PRINT LIST");
     }
 
     public void AVG(ArrayList numList) //Prints the average of the numbers.
@@ -71,7 +69,6 @@ public class ArrayListofNumber {
         }
         avg = avg/num;
         System.out.println("The average of the numbers is: "+avg+".");
-        System.out.println("END AVG");
     }
     public void minMax(ArrayList numList)//Filters out all of the even numbers (ones divisible by 2).
     {
@@ -102,7 +99,6 @@ public class ArrayListofNumber {
             }
         }
         System.out.print(" are even.");
-        System.out.println("END EVEN");
     }
 
 }
