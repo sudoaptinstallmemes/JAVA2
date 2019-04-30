@@ -3,9 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ArrayListImport/ArrayListImport.iml" filepath="$PROJECT_DIR$/ArrayListImport/ArrayListImport.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 10/Chapter 10.iml" filepath="$PROJECT_DIR$/Chapter 10/Chapter 10.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter 8/Chapter 8.iml" filepath="$PROJECT_DIR$/Chapter 8/Chapter 8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 9?/Chapter 9?.iml" filepath="$PROJECT_DIR$/Chapter 9?/Chapter 9?.iml" />
       <module fileurl="file://$PROJECT_DIR$/FileReading/FileReading.iml" filepath="$PROJECT_DIR$/FileReading/FileReading.iml" />
       <module fileurl="file://$PROJECT_DIR$/JAVA2.iml" filepath="$PROJECT_DIR$/JAVA2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SHAPE classes/SHAPE classes.iml" filepath="$PROJECT_DIR$/SHAPE classes/SHAPE classes.iml" />
     </modules>
   </component>
 </project>
