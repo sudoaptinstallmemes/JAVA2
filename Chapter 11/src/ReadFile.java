@@ -21,7 +21,7 @@ public class ReadFile {
             String line = fileScanner.nextLine();
             Scanner lineScanner = new Scanner(line);
             lineScanner.useDelimiter(" ");
-            String product = lineScanner.next();
+            lineScanner.next();
             x = 0;
             num = 0;
             while(lineScanner.hasNext())
