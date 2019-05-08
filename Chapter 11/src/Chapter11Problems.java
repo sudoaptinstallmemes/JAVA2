@@ -4,17 +4,17 @@ import java.nio.file.Files;
 import java.nio.file.InvalidPathException;
 import java.nio.file.Paths;
 import java.util.*;
-public class TwentyFour {
+public class Chapter11Problems {
     public static void main(String [] args) throws Exception
     {
-        TwentyFour start = new TwentyFour();
+        Chapter11Problems start = new Chapter11Problems();
 //        start.twentyfour();
 //        start.twentyfive();
 //        start.twentysix();
 //        start.twentyseven();//WIP
 //        start.twentyeight();
 //        start.twentynine();
-        start.thirty();
+//        start.thirty();
 
     }
     
@@ -46,6 +46,8 @@ public class TwentyFour {
             ioe.printStackTrace();
         }
     }
+
+
     static void twentyfive()
     {
         Scanner parse = new Scanner("A-B-C-D");
@@ -53,6 +55,8 @@ public class TwentyFour {
         String s = parse.nextLine();
         System.out.print(s.substring(s.indexOf("C"),(s.indexOf("C")+1)));
     }
+
+
     static void twentysix()
     {
         try
@@ -134,12 +138,15 @@ public class TwentyFour {
     static void thirty()
     {
      int [] grades = {98,76,82,90,100,75};
+     String letter;
      try
      {
          FileWriter fw = new FileWriter("/Users/amonguinan/IdeaProjects/JAVA2/Chapter 11/src/grades", false);
          for(int i = 0; i != grades.length; i++)
          {
-             fw.append((char)grades[i]);
+             letter = Integer.toString(grades[i]);
+             fw.write(letter);
+             System.out.println(letter);
          }
      }
      catch(IOException ioe)
